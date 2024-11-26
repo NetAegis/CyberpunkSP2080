@@ -1,0 +1,265 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #050505, #1f1f1f);
+    border-bottom: 2px solid #03fcba;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #03fcba;
+    text-transform: uppercase;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: #03fcba;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #fc03ca;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('cyberpunk-bg.jpg') no-repeat center center/cover;
+    color: #f0f0f0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #03fcba;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #03fcba;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    background: #fc03ca;
+}
+
+/* Seções */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #03fcba;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #03fcba;
+}
+
+.section p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Linha do Tempo */
+.timeline-section {
+    padding: 50px 20px;
+    background: #1a1a1a;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 4px solid #03fcba;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #03fcba, #fc03ca);
+}
+
+.event {
+    padding: 20px;
+    margin: 20px 0;
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(3, 252, 186, 0.2);
+    position: relative;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: #03fcba;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+}
+
+.event h3 {
+    font-size: 1.5em;
+    color: #fc03ca;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #fc03ca;
+}
+
+.event p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Gangues */
+.gang-section {
+    padding: 50px 20px;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.gang-section h2 {
+    font-size: 2.5em;
+    color: #03fcba;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #03fcba;
+}
+
+.gang {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(3, 252, 186, 0.2);
+}
+
+.gang h3 {
+    font-size: 1.5em;
+    color: #fc03ca;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #fc03ca;
+}
+
+.gang p {
+    font-size: 1em;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #1f1f1f;
+    border: 1px solid #03fcba;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #03fcba;
+    border: none;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #fc03ca;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    border-top: 2px solid #03fcba;
+    color: #03fcba;
+}
+
+/* Baixar Conto */
+#envio-pdf {
+    padding: 50px 20px;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+#envio-pdf h2 {
+    font-size: 2.5em;
+    color: #03fcba;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #03fcba;
+}
+
+#envio-pdf p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#envio-pdf .btn-download {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #03fcba;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#envio-pdf .btn-download:hover {
+    background: #fc03ca;
+}
